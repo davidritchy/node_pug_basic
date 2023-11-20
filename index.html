@@ -8,20 +8,69 @@
 <body>
     <style>
         nav{
-            background-color: beige;
+            background-color: beige;  
         }
         ul{
             list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer{
+            background-color: beige;
+            text-align: center;
+            height: 100px;
+            width: 100%;     
+        }
+
+        figure{
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: white;
+            border: 2px solid red;
+        }
+
+        img{
+            margin-left:5%;
+            margin-right: 5%;
+            margin-top: 10px;
+        }
+
+        main{
+            background-color: black;
+            margin-bottom: 20px;
+        }
+
+        h1{
+            color: white;
+            background-color: red;
+        }
+
+        .bouton{
+            margin-left: 11rem;
+    
         }
     </style>
-    <h1>Bienvenue dans ma page</h1>
+    <h1>Bienvenue sur ma page</h1>
     <nav>
         <ul>  
             <li><a href="">Home</a></li>
             <li><a href="">Menu</a></li>
-            <li><a href="">Retour</a></li>
+            <li><a href="">Commande</a></li>
         </ul>
     </nav>
+    <main>
+        <figure>
+            <img src="/cake.jpg" alt="gateau" width="700">
+            <figcaption>
+                Desirez-vous un gateau!?
+            </figcaption>
+        </figure>
+        <div class="bouton">
+            <button>oui</button>
+            <button>non</button>
+        </div>    
+    </main>
     
     <footer>
         Tous droits reserves.
